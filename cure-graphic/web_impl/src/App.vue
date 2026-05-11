@@ -21,9 +21,14 @@
 <script setup lang="ts">
 import basic_raytracing from "./examples/render/basic_raytracing.vue";
 import basic_reflection from "./examples/render/basic_reflection.vue";
+import basic_triangle from "./examples/render/basic_triangle.vue";
 
 // 后续新增例子在此处添加即可
-const renders: ExampleInfo[] = [basic_raytracing, basic_reflection] as any
+const renders: ExampleInfo[] = [
+    basic_raytracing,
+    basic_reflection,
+    basic_triangle,
+] as any;
 </script>
 
 <style scoped>
