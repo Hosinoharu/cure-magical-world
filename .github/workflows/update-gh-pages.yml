@@ -63,6 +63,8 @@ jobs:
         uses: actions/upload-pages-artifact@v5
         with:
           path: gh-pages
+          # .pnpm.js、.pnpm.css 必须上传
+          include-hidden-files: true
 
       - name: Deploy GitHub Pages site
         id: deployment
