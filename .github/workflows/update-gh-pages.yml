@@ -56,6 +56,9 @@ jobs:
         working-directory: cure-physics/web_impl
         run: pnpm run build
 
+      - name: Copy Github Page Index HTML
+        run: cp -f cure-shared/web_impl/index.html gh-pages/index.html
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
 
