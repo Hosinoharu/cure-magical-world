@@ -17,7 +17,7 @@
 这里记录**异世界的攻略**。
 
 -   `cure-graphic`：计算机图形学
--   `cure-physics-engine`：物理引擎
+-   `cure-physics`：物理引擎
 -   `cure-godot`：使用 [Godot Engine](https://godotengine.org/) 制作的游戏
 -   `cure-shared`：共享的资源
 
@@ -31,7 +31,7 @@
 
 
 
-## Physics Engine
+## Physics
 
 `web_impl/`：在浏览器中实现。因为性能原因，仅用于理解原理
 
