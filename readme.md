@@ -19,6 +19,7 @@
 -   `cure-engine`：从零实现引擎
 -   `cure-graphic`：计算机图形学
 -   `cure-godot`：使用 [Godot Engine](https://godotengine.org/) 制作的游戏
+-   `cure-shared`：共享的资源
 
 # Content
 
