@@ -9,8 +9,13 @@ import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 
 import { replace_route_path } from "../../cure-shared/web_impl/router_helper";
 
+const outDir = fileURLToPath(
+    new URL("../../gh-pages/graphic", import.meta.url),
+);
+
 // https://vite.dev/config/
 export default defineConfig({
+    base: "/cure-magical-world/graphic",
     plugins: [
         replace_route_path(),
         vue(),
@@ -24,7 +29,7 @@ export default defineConfig({
     build: {
         rolldownOptions: {
             output: {
-                assetFileNames: "[name].[extname]",
+                assetFileNames: "[name][extname]",
                 chunkFileNames: "[name].js",
                 manualChunks(id) {
                     if (id.includes("node_modules")) {
@@ -37,6 +42,7 @@ export default defineConfig({
                 },
             },
         },
+        outDir,
         emptyOutDir: true,
     },
     resolve: {
